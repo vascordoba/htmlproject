@@ -17,6 +17,7 @@
 		<header>
 			<img src="img/logo.svg" width="100"/>
 			<h1>Hoja de Vida</h1>
+			<h2>Victor Ariel Sanchez Sumay</h2>
 		</header>
 		<nav>
 			<ul>
@@ -28,7 +29,74 @@
 		<section>
 			<article>
 				<h2>Educacion</h2>
+				<table border="1">
+					<tr>
+						<th>Año</th>
+						<th>Institución</th>
+						<th>Lugar</th>
+						<th>¿Culminó?</th>
+					</tr>
+					<tr>
+						<td>1996</td>
+						<td>Colegio San Francisco</td>
+						<td>San Juan - Argentina</td>
+						<td>Si</td>
+					</tr>
+					<tr>
+						<td>2006</td>
+						<td>UTN Cordoba</td>
+						<td>Cordoba - Argentina</td>
+						<td>Si</td>
+					</tr>
+				</table>
 				
+				<form name="estudio" method="POST">
+					<fieldset>
+						<legend>Agregar Estudios</legend>
+						<div>
+							<label for="anio">Año</label>
+							<select id="anio" name="anio">
+								<option value="2016">2016</option>
+								<option value="2015">2015</option>
+								<option value="2014">2014</option>
+								<option value="2013">2013</option>
+								<option value="2012">2012</option>
+								<option value="2011">2011</option>
+								<option value="2010">2010</option>
+								<option value="2009">2009</option>
+								<option value="2008">2008</option>
+								<option value="2007">2007</option>
+								<option value="2006">2006</option>
+								<option value="2005">2005</option>
+								<option value="2004">2004</option>
+								<option value="2003">2003</option>
+								<option value="2002">2002</option>
+								<option value="2001">2001</option>
+								<option value="2000">2000</option>
+							</select>
+						</div>
+						<div>
+							<label for="instituto">Institución</label>
+							<input type="text" name="instituto" id="instituto" required maxlength="100" size="100" />
+						</div>
+						<div>
+							<label for="lugar">Lugar</label>
+							<textarea name="lugar" id="lugar" cols="100" rows="3"></textarea>
+						</div>
+						<div>
+							<label>¿Culminó?</label>
+							<label>Si 
+								<input type="radio" id="culminadosi" name="culminado"/>
+							</label>
+							<label>No 
+								<input type="radio" id="culminadono" name="culminado"/>
+							</label>
+						</div>
+						<div>
+							<input type="submit" value="Enviar">
+						</div>
+					</fieldset>
+				</form>
 			</article>
 			
 		</section>
